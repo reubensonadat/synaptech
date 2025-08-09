@@ -508,7 +508,13 @@
             flex-wrap: wrap;
         }
         
-        .btn-outline {
+        .btn1-outline {
+            background: rgba(255, 255, 255, 0.20);
+            backdrop-filter: blur(10px);
+            max-width: 230px;
+        }
+        
+        .btn1-outline {
             background: var(--secondary);
             backdrop-filter: blur(10px);
             max-width: 230px;
