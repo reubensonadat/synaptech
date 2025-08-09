@@ -68,25 +68,6 @@
             position: relative;
         }
         
-        .logo-icon::before,
-        .logo-icon::after {
-            content: '';
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: white;
-            border-radius: 1px;
-        }
-        
-        .logo-icon::before {
-            top: 6px;
-            left: 6px;
-        }
-        
-        .logo-icon::after {
-            bottom: 6px;
-            right: 6px;
-        }
         
         nav ul {
             display: flex;
