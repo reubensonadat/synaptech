@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /sitemap.xml
+
+# Block common bot paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+Sitemap: https://synaptech.com/sitemap.xml
