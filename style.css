@@ -168,7 +168,6 @@
         
         .hero-tag {
             display: inline-block;
-            height: 38px;
             padding: 9px 16px;
             border-radius: 50px;
             border: 1px solid rgba(255, 255, 255, 0.10);
@@ -221,7 +220,6 @@
         
         .section-tag {
             display: inline-block;
-            height: 38px;
             padding: 9px 16px;
             border-radius: 50px;
             border: 1px solid rgba(0, 0, 0, 0.10);
@@ -580,9 +578,9 @@
         }
         
         .stat-card-1 { background: #B1E5FC; }
-        .stat-card-2 { background: #EAEAEA; }
+        .stat-card-2 { background: beige }
         .stat-card-3 { background: rgba(100, 111, 198, 0.20); }
-        .stat-card-4 { background: #EAEAEA; }
+        .stat-card-4 { background: wheat; }
         .stat-card-5 { background: #C9ECD8; }
         .stat-card-6 { background: #EAEAEA; }
         
