@@ -207,6 +207,7 @@
         .section-services {
             padding: 70px 0;
             position: relative;
+            padding: 5%;
         }
         
         .section-header {
@@ -323,6 +324,7 @@
             padding: 70px 0;
             position: relative;
             background: #f5f5f5;
+            padding: 5%;
         }
         
         .portfolio-grid {
@@ -479,6 +481,7 @@
         /* Testimonials Section */
         .testimonials-section {
             padding: 70px 0;
+            padding: 5%;
         }
         
         .testimonials-container {
