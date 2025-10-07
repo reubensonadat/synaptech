@@ -10,6 +10,23 @@ const Pricing = () => {
   const renderPackageCard = (pkg, type, index) => {
     const isPopular = pkg.isPopular;
     
+    // Format the price display
+    const formatPrice = () => {
+      if (pkg.price === "Quote-based") {
+        return pkg.price;
+      }
+      
+      if (pkg.priceMax === 99999) {
+        return `GH₵${pkg.priceMin}+`;
+      }
+      
+      if (pkg.priceMax) {
+        return `GH₵${pkg.priceMin}-${pkg.priceMax}`;
+      }
+      
+      return `GH₵${pkg.priceMin}`;
+    };
+    
     return (
       <div key={index} className="bg-card rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative">
         {isPopular && (
@@ -21,7 +38,7 @@ const Pricing = () => {
           <h3 className="text-xl font-semibold mb-2 text-foreground">{pkg.title}</h3>
           <div className="mb-4">
             <span className="text-3xl font-bold text-foreground">
-              {pkg.price === "Quote-based" ? pkg.price : `GH₵${pkg.priceMin}${pkg.priceMax ? `-${pkg.priceMax}` : ''}${pkg.priceMax === 99999 ? '+' : ''}`}
+              {formatPrice()}
             </span>
             <span className="text-muted-foreground block">{pkg.priceType || 'one-time'}</span>
           </div>
