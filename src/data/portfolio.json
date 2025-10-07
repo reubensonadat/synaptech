@@ -1,0 +1,24 @@
+{
+  "filters": ["All", "Website", "Content Creation", "Graphic Design", "PowerPoint", "Maintenance"],
+  "itemsPerPage": 6,
+  "items": [
+    {
+      "id": "resto-001",
+      "title": "Restaurant Website",
+      "subtitle": "Modern website with online menu & reservation",
+      "tech": ["HTML/CSS", "JavaScript", "Responsive"],
+      "image": "/assets/portfolio/restaurant.png",
+      "link": "#",
+      "category": "Website"
+    },
+    {
+      "id": "biz-001",
+      "title": "Business Website",
+      "subtitle": "Consulting site with lead-generation forms",
+      "tech": ["Corporate", "Lead Generation"],
+      "image": "/assets/portfolio/business.png",
+      "link": "#",
+      "category": "Website"
+    }
+  ]
+}

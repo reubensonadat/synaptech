@@ -1,0 +1,173 @@
+{
+  "website": {
+    "title": "Website Development",
+    "subtitle": "Professional websites that help your business grow",
+    "packages": {
+      "basic": {
+        "title": "Basic",
+        "priceMin": 600,
+        "priceMax": 1500,
+        "target": "Perfect for: Small Instagram businesses",
+        "features": [
+          "Up to 3 pages",
+          "Responsive design",
+          "Contact form",
+          "Basic SEO",
+          "Static site",
+          "Social media links with icons",
+          "Google Maps embed for location",
+          "Favicon + basic brand colors applied",
+          "QR code for website"
+        ]
+      },
+      "standard": {
+        "title": "Standard",
+        "priceMin": 1500,
+        "priceMax": 5000,
+        "target": "Perfect for: Growing businesses",
+        "isPopular": true,
+        "features": [
+          "Everything in Basic, plus:",
+          "Up to 10 pages",
+          "Advanced SEO",
+          "2 revisions",
+          "Advanced analytics",
+          "Domain name inclusive",
+          "1 month free editing",
+          "Semi-dynamic site",
+          "Photo gallery or product showcase",
+          "Blog or news section",
+          "Custom animations or effects",
+          "Email capture form (Mailchimp integration)",
+          "Basic eCommerce (up to 10 products)",
+          "Monthly performance report",
+          "On-page optimization for speed and mobile",
+          "1 free banner or promotional graphic",
+          "SSL certificate (secure https)"
+        ]
+      },
+      "premium": {
+        "title": "Premium",
+        "priceMin": 5000,
+        "priceMax": 99999,
+        "target": "Perfect for: Established brands",
+        "features": [
+          "Everything in Standard, plus:",
+          "Unlimited pages",
+          "5 revisions",
+          "6 months free editing",
+          "Brand identity package (logo, color scheme)",
+          "Full brand kit (logo, fonts, colors, guide)",
+          "Custom illustrations or icons",
+          "Multi-language support",
+          "Automated chat widget (Paid AI chatbot)",
+          "Advanced eCommerce (unlimited products)",
+          "Content writing for all pages",
+          "6 months maintenance & backups",
+          "Social media launch kit",
+          "Dynamic site"
+        ]
+      }
+    }
+  },
+  "content": {
+    "title": "Content Creation",
+    "subtitle": "Professional content that tells your brand story",
+    "packages": {
+      "basic": {
+        "title": "Basic",
+        "priceMin": 600,
+        "priceMax": 800,
+        "target": "Perfect for: Small businesses starting out",
+        "features": [
+          "1 short video (≤30s)",
+          "3–4 brand/product photos",
+          "Simple captions",
+          "Basic editing (music, transitions, logo overlay)",
+          "1-hour shoot",
+          "Delivery: 3–4 days"
+        ]
+      },
+      "standard": {
+        "title": "Standard",
+        "priceMin": 1200,
+        "priceMax": 1500,
+        "target": "Perfect for: Growing businesses",
+        "isPopular": true,
+        "features": [
+          "3 short videos",
+          "6–8 professional photos",
+          "Concept planning & basic scripts",
+          "1–2 locations",
+          "Moderate editing",
+          "1 revision",
+          "Delivery: 5–7 days"
+        ]
+      },
+      "premium": {
+        "title": "Premium",
+        "priceMin": 2800,
+        "priceMax": 3200,
+        "target": "Perfect for: Established brands",
+        "features": [
+          "5 creative videos",
+          "10+ brand photos",
+          "Full strategy session",
+          "Multiple setups/locations",
+          "Cinematic editing & subtitles",
+          "2 revisions",
+          "Delivery: 7–10 days"
+        ]
+      }
+    }
+  },
+  "other": {
+    "title": "Other Services",
+    "subtitle": "Additional services to enhance your digital presence",
+    "services": [
+      {
+        "title": "Graphic Design",
+        "price": 100,
+        "priceType": "per design",
+        "description": "Professional graphics for your brand",
+        "features": [
+          "Brand graphics",
+          "Banners",
+          "Promotional assets"
+        ]
+      },
+      {
+        "title": "PowerPoint Presentations",
+        "price": "Quote-based",
+        "priceType": "contact for pricing",
+        "description": "High-quality branded pitch decks",
+        "features": [
+          "Professional design",
+          "Branded templates",
+          "Custom animations"
+        ],
+        "isQuoteBased": true
+      }
+    ]
+  },
+  "bundleDiscounts": {
+    "title": "Bundle Discounts",
+    "subtitle": "Save more when you combine services",
+    "basicBundle": {
+      "title": "Basic Bundle",
+      "discount": 100,
+      "description": "Website + Basic Content"
+    },
+    "standardBundle": {
+      "title": "Standard Bundle",
+      "discount": 200,
+      "description": "Website + Standard Content"
+    },
+    "premiumBundle": {
+      "title": "Premium Bundle",
+      "discount": 300,
+      "description": "Website + Premium Content"
+    }
+  },
+  "customNote": "PowerPoint presentations and Website Maintenance are quote-based. Contact us with details for a custom quote."
+}

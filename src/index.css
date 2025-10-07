@@ -1,0 +1,305 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --radius: 0.625rem;
+  --background: 255 255 255;
+  --foreground: 15 23 42;
+  --card: 255 255 255;
+  --card-foreground: 15 23 42;
+  --popover: 255 255 255;
+  --popover-foreground: 15 23 42;
+  --primary: 124 58 237;
+  --primary-foreground: 255 255 255;
+  --secondary: 241 245 249;
+  --secondary-foreground: 15 23 42;
+  --muted: 241 245 249;
+  --muted-foreground: 100 116 139;
+  --accent: 241 245 249;
+  --accent-foreground: 15 23 42;
+  --destructive: 239 68 68;
+  --destructive-foreground: 255 255 255;
+  --border: 226 232 240;
+  --input: 226 232 240;
+  --ring: 124 58 237;
+  --chart-1: 220 38 38;
+  --chart-2: 15 23 42;
+  --chart-3: 59 130 246;
+  --chart-4: 34 197 94;
+  --chart-5: 168 85 247;
+  --sidebar: 250 250 250;
+  --sidebar-foreground: 15 23 42;
+  --sidebar-primary: 15 23 42;
+  --sidebar-primary-foreground: 250 250 250;
+  --sidebar-accent: 241 245 249;
+  --sidebar-accent-foreground: 15 23 42;
+  --sidebar-border: 226 232 240;
+  --sidebar-ring: 124 58 237;
+  --page-bg: 248 250 252; /* Light gray background for stats section */
+  --section-bg: 248 250 252; /* Light gray background for sections */
+}
+
+.dark {
+  --background: 30 41 59; /* Dark gray background similar to navigation bar */
+  --foreground: 248 250 252;
+  --card: 30 41 59;
+  --card-foreground: 248 250 252;
+  --popover: 30 41 59;
+  --popover-foreground: 248 250 252;
+  --primary: 139 92 246;
+  --primary-foreground: 15 23 42;
+  --secondary: 51 65 85;
+  --secondary-foreground: 248 250 252;
+  --muted: 51 65 85;
+  --muted-foreground: 148 163 184;
+  --accent: 51 65 85;
+  --accent-foreground: 248 250 252;
+  --destructive: 220 38 38;
+  --destructive-foreground: 248 250 252;
+  --border: 51 65 85;
+  --input: 71 85 105;
+  --ring: 139 92 246;
+  --chart-1: 220 38 38;
+  --chart-2: 15 23 42;
+  --chart-3: 59 130 246;
+  --chart-4: 34 197 94;
+  --chart-5: 168 85 247;
+  --sidebar: 30 41 59;
+  --sidebar-foreground: 248 250 252;
+  --sidebar-primary: 139 92 246;
+  --sidebar-primary-foreground: 15 23 42;
+  --sidebar-accent: 51 65 85;
+  --sidebar-accent-foreground: 248 250 252;
+  --sidebar-border: 51 65 85;
+  --sidebar-ring: 139 92 246;
+  --page-bg: 30 41 59; /* Consistent dark gray background */
+  --section-bg: 30 41 59; /* Consistent dark gray background for sections */
+  --header-bg: 30 41 59; /* Dark gray for header */
+  --cta-bg: 40 55 70; /* Slightly lighter dark gray for CTA */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, 
+      rgb(var(--background)) 0%, 
+      rgb(var(--muted) / 0.3) 50%, 
+      rgb(var(--background)) 100%);
+    min-height: 100vh;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  .animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+  }
+  
+  .animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+  }
+}
+
+@layer utilities {
+  .gradient-bg {
+    background: linear-gradient(135deg, 
+      rgb(var(--background)) 0%, 
+      rgb(var(--muted) / 0.3) 50%, 
+      rgb(var(--background)) 100%);
+  }
+  
+  .dark .gradient-bg {
+    background: linear-gradient(135deg, 
+      rgb(var(--background)) 0%, 
+      rgb(var(--muted) / 0.5) 50%, 
+      rgb(var(--background)) 100%);
+  }
+  
+  .header-gradient {
+    background: linear-gradient(135deg, 
+      rgb(var(--primary) / 0.1) 0%, 
+      rgb(var(--secondary) / 0.2) 50%, 
+      rgb(var(--background)) 100%);
+  }
+  
+  .dark .header-gradient {
+    background: linear-gradient(135deg, 
+      rgb(var(--primary) / 0.2) 0%, 
+      rgb(var(--secondary) / 0.3) 50%, 
+      rgb(var(--background)) 100%);
+  }
+  
+  .light-page-bg {
+    @apply bg-gray-50;
+  }
+  
+  .dark .light-page-bg {
+    background-color: rgb(var(--page-bg));
+  }
+  
+  .section-bg {
+    @apply bg-gray-50;
+  }
+  
+  .dark .section-bg {
+    background-color: rgb(var(--section-bg));
+  }
+  
+  .text-dark-mode {
+    @apply text-foreground;
+  }
+  
+  .hover-black:hover {
+    @apply text-black;
+  }
+  
+  .button-vibrant {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 font-semibold shadow-lg hover:shadow-xl transition-all duration-200;
+  }
+  
+  .button-vibrant-no-hover {
+    @apply bg-primary text-primary-foreground font-semibold shadow-lg;
+  }
+  
+  .dark .button-vibrant-no-hover {
+    @apply text-white;
+  }
+  
+  .stats-card {
+    @apply bg-card text-card-foreground border-2 border-border shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+  
+  .service-icon {
+    @apply text-primary;
+  }
+  
+  .vibrant-text {
+    @apply text-foreground font-semibold;
+  }
+  
+  .dark .vibrant-text {
+    @apply text-white;
+  }
+  
+  .light-mode-dark-text {
+    @apply text-gray-900;
+  }
+  
+  .dark .light-mode-dark-text {
+    @apply text-foreground;
+  }
+  
+  /* Header background utility */
+  .header-bg {
+    background-color: rgb(var(--header-bg));
+  }
+  
+  .dark .header-bg {
+    background-color: rgb(var(--header-bg));
+  }
+  
+  /* CTA background utility */
+  .cta-bg {
+    background-color: rgb(var(--cta-bg));
+  }
+  
+  .dark .cta-bg {
+    background-color: rgb(var(--cta-bg));
+  }
+}
