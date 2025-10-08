@@ -1,7 +1,6 @@
 import React from 'react';
 import SEO from '../common/SEO';
 import PageHeader from '../ui/PageHeader';
-import ServiceCard from '../ui/ServiceCard';
 import CTA from '../ui/CTA';
 import { Link } from 'react-router-dom';
 import servicesData from '../../data/services.json';

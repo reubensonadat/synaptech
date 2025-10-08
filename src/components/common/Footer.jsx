@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import headerFooterData from '../../data/headerFooter.json';
 import brandingData from '../../data/branding.json';
 

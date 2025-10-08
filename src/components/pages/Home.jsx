@@ -7,7 +7,6 @@ import PortfolioGrid from '../ui/PortfolioGrid';
 import CTA from '../ui/CTA';
 import { Link } from 'react-router-dom';
 import siteData from '../../data/site.json';
-import servicesData from '../../data/services.json';
 
 const Home = () => {
   const getStatsIcon = (index) => {

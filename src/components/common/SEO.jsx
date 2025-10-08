@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import siteData from '../../data/site.json';
 
