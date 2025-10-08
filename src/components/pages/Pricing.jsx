@@ -204,7 +204,7 @@ const Pricing = () => {
                 {customNote}
               </p>
               <Link to="/contact" className="button-vibrant px-8 py-3 rounded-md">
-                Contact Us for Custom Quote
+                Get Custom Quote
               </Link>
             </div>
           </div>
